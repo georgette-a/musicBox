@@ -1,0 +1,37 @@
+<ion-content slot="fixed" [scrollY]="false">
+    <ion-card class="ion-padding-bottom" style="box-shadow: none;">
+        <ion-card-header>
+
+        </ion-card-header>
+
+        <ion-card-content>
+            <ion-img class="ion-align-items-center" style="width: 80%; height: 80%;" [src]="'./assets/images/email.png'"></ion-img>
+
+            <div class="mbH3"><span class="highlight">Enter </span>your e-mail address</div>
+            <br>
+
+            <form (ngSubmit)="onSubmit()">
+                <ion-grid>
+                    <ion-row>
+                        <ion-col>
+                            <ion-label position="stacked">E-mail Address</ion-label>
+                            <ion-input type="password" placeholder="Password"></ion-input>
+                        </ion-col>
+
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <ion-label position="stacked">Confirm Password</ion-label>
+                            <ion-input type="password" placeholder="Confirm Password"></ion-input>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+                <ion-button expand="block" fill="solid" shape="round">
+                    Sign Up
+                </ion-button>
+            </form>
+        </ion-card-content>
+    </ion-card>
+
+
+</ion-content>

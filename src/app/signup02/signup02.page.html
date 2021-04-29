@@ -1,0 +1,40 @@
+<ion-content slot="fixed" [scrollY]="false">
+    <ion-card class="ion-padding-bottom" style="box-shadow: none;">
+        <ion-card-header>
+
+        </ion-card-header>
+
+        <ion-card-content>
+            <ion-img style="width: 90%; height: 90%;" [src]="'./assets/images/email.png'"></ion-img>
+
+            <div class="mbH3"><span class="highlight">Enter </span>your basic info</div>
+            <br>
+            <p class="text">Let's finish up your account.</p>
+
+            <form class="ion-padding-top" (ngSubmit)="onSubmit()">
+                <ion-grid>
+                    <ion-row>
+                        <ion-col>
+                            <ion-label position="stacked">First Name</ion-label>
+                            <ion-input type="text" placeholder="First Name"></ion-input>
+                        </ion-col>
+
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <ion-label position="stacked">Last Name</ion-label>
+                            <ion-input type="text" placeholder="Last Name"></ion-input>
+                        </ion-col>
+                    </ion-row>
+                    <br>
+                    <ion-button expand="block" fill="solid" shape="round">
+                        Sign Up
+                    </ion-button>
+                </ion-grid>
+
+            </form>
+        </ion-card-content>
+    </ion-card>
+
+
+</ion-content>

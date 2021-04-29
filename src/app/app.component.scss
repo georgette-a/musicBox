@@ -1,0 +1,10 @@
+@import '../theme/fonts';
+:root[mode=ios] .poppins,
+:root[mode=md] .poppins {
+    --ion-font-family: 'Poppins'!important;
+    font-family: 'Poppins' !important;
+}
+
+.highlight {
+    color: #62BCEF;
+}

@@ -1,0 +1,28 @@
+<ion-content [scrollY]="false">
+    <ion-card class="ion-padding-bottom" style="box-shadow: none;">
+        <ion-card-header>
+
+        </ion-card-header>
+
+        <ion-card-content>
+            <ion-img style="width: 70%; height: 70%;" [src]="'./assets/images/welcome.png'"></ion-img>
+
+            <div class="mbH3"><span class="highlight">Welcome </span>to MusicBox</div>
+            <br>
+            <p>Putting your music, lyrics and tabs all in one place!
+                <br>
+                <br>Using this app means you agree to the
+                <a>Terms and Conditions</a> and <a>Privacy Policy</a>
+                <br>
+                <br>Let's set up your account!
+            </p>
+            <br>
+
+            <ion-button (click)="onClick()" expand="block" fill="solid" shape="round">
+                Get Started
+            </ion-button>
+        </ion-card-content>
+    </ion-card>
+
+
+</ion-content>
