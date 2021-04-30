@@ -1,17 +1,29 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-header class="ion-no-border">
+        <ion-toolbar class="ion-padding-end ion-padding-start">
+            <ion-icon slot="start" color="primary" name="chevron-back-sharp"></ion-icon>
+            <p class="highlight2">Back</p>
+            <ion-icon slot="end" name="ellipsis-horizontal-sharp"></ion-icon>
+        </ion-toolbar>
+    </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+
+    <ion-card class="ion-padding">
+        <ion-img style="width: 70%; height: 70%;" [src]="'./assets/images/welcome.png'"></ion-img>
+    </ion-card>
+    <ion-grid class="ion-text-center">
+        <ion-col>
+            <ion-label>Awesome Label</ion-label>
+            <br><span class="artistName">Awesome Label</span>
+        </ion-col>
+    </ion-grid>
+    <ion-list>
+        <ion-item>
+            <span class="highlight" slot="start">1</span> <span class="text">Awesome Label... </span><span slot="end" class="subtext">3:21</span>
+        </ion-item>
+    </ion-list>
+    <ion-footer>
+        <p class="subtext ion-padding">2021</p>
+
+    </ion-footer>
 </ion-content>

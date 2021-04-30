@@ -1,17 +1,16 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-header class="ion-no-border">
+        <ion-toolbar class="ion-padding-end ion-padding-start">
+            <p><span class="highlight">Saved</span> Pages</p>
+            <ion-icon slot="end" name="ellipsis-horizontal-sharp"></ion-icon>
+        </ion-toolbar>
+    </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+    <ion-list>
+        <ion-item class="">
+            <ion-img style="width: 30%; height: 30%;" [src]="'./assets/images/welcome.png'"></ion-img>
+            <span class="highlight ion-text-nowrap" slot="start">1</span> Awesome Label... <span slot="end" class="subtext">3:21</span>
+        </ion-item>
+    </ion-list>
+
 </ion-content>

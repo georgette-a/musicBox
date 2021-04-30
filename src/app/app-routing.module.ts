@@ -1,9 +1,25 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
+// Import the AngularFire Module
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+
+// AngularFire Settings
+export const firebaseConfig = {
+  apiKey: 'AIzaSyBN4PemKw8We7nWLvSIwHv5WNAy0fvTTyQ',
+  authDomain: 'musicbox-33da1.firebaseapp.com',
+  projectId: 'musicbox-33da1',
+  storageBucket: 'musicbox-33da1.appspot.com',
+  messagingSenderId: '563422545612',
+  appId: '1:563422545612:web:d412e34a3eec4b915a6469',
+  measurementId: 'G-CBZY1VRRG0'
+};
+
 const routes: Routes = [
   {
-    path: 'tabs',
+    path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
@@ -15,7 +31,7 @@ const routes: Routes = [
     loadChildren: () => import('./welcome02/welcome02.module').then( m => m.Welcome02PageModule)
   },
   {
-    path: 'signup01',
+    path: '',
     loadChildren: () => import('./signup01/signup01.module').then( m => m.Signup01PageModule)
   },
   {
@@ -31,13 +47,16 @@ const routes: Routes = [
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: '',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: 'album',
+    loadChildren: () => import('./album/album.module').then( m => m.AlbumPageModule)
   }
 ];
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireAuthModule,
+    AngularFirestoreModule,
   ],
   exports: [RouterModule]
 })
