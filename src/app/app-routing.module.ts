@@ -32,7 +32,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./detect/detect.module').then( m => m.DetectPageModule)
   }
 ];
 @NgModule({
