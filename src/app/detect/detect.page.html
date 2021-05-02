@@ -22,8 +22,8 @@
             <ion-icon slot="start" name="mic-sharp"></ion-icon>
             Detect Audio
           </ion-button>
-          <div *ngIf="isRecording" (click)="stopRecording()" >
-          <ion-button color="danger" size="large" fill="solid" strong="true">
+          <div *ngIf="isRecording" >
+          <ion-button (click)="stopRecording()" color="danger" size="large" fill="solid" strong="true">
             <ion-icon slot="start" name="stop"></ion-icon>
             Stop Detecting
           </ion-button>

@@ -19,6 +19,7 @@
     "@angular/platform-browser": "~11.2.0",
     "@angular/platform-browser-dynamic": "~11.2.0",
     "@angular/router": "~11.2.0",
+    "@ionic-native/core": "^5.32.1",
     "@ionic-native/file": "^5.32.1",
     "@ionic-native/media": "^5.32.1",
     "@ionic/angular": "^5.5.2",
@@ -79,9 +80,7 @@
         "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
       },
       "cordova-plugin-ionic-keyboard": {},
-      "cordova-plugin-media": {
-        "KEEP_AVAUDIOSESSION_ALWAYS_ACTIVE": "NO"
-      },
+      "cordova-plugin-media": {},
       "cordova-plugin-file": {}
     },
     "platforms": [
