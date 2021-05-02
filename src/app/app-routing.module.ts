@@ -47,8 +47,13 @@ const routes: Routes = [
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   {
+<<<<<<< Updated upstream
     path: 'album',
     loadChildren: () => import('./album/album.module').then( m => m.AlbumPageModule)
+=======
+    path: 'detect',
+    loadChildren: () => import('./detect/detect.module').then( m => m.DetectPageModule)
+>>>>>>> Stashed changes
   }
 ];
 @NgModule({

@@ -1,0 +1,32 @@
+<ion-content>
+<ion-card class="ion-padding-bottom" style="box-shadow: none;">
+
+
+  <ion-card-content>
+   
+      <h2 class="ion-padding"><span class="highlight">Find</span> Music!</h2>
+  
+      <ion-img class="ion-padding-start" style="width: 90%; height: 90%;" [src]="'./assets/images/congrats.png'"></ion-img>
+
+      <div>
+        <br>
+                  <p>Do you want to find out what song is playing? Here's how!
+                      <br>
+                      <br><span class="highlight">1. </span> Click Detect Audio
+                      <br><span class="highlight">2. </span> Open with your preferred Streaming App!
+                      <br>
+                  </p></div>
+                  <br>
+        <input type="file" accept="audio/*" capture id="recorder">
+          <ion-button (click)="startRecording()" *ngIf="!isRecording" size="large" fill="solid" strong="true">
+            <ion-icon slot="start" name="mic-sharp"></ion-icon>
+            Detect Audio
+          </ion-button>
+          <div *ngIf="isRecording" >
+          <ion-button (click)="stopRecording()" color="danger" size="large" fill="solid" strong="true">
+            <ion-icon slot="start" name="stop"></ion-icon>
+            Stop Detecting
+          </ion-button>
+        </div>
+
+  </ion-card-content>
