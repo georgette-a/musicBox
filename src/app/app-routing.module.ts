@@ -6,8 +6,8 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 
-// AngularFire Settings
-export const firebaseConfig = {
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
   apiKey: 'AIzaSyBN4PemKw8We7nWLvSIwHv5WNAy0fvTTyQ',
   authDomain: 'musicbox-33da1.firebaseapp.com',
   projectId: 'musicbox-33da1',
@@ -19,11 +19,11 @@ export const firebaseConfig = {
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'tabs',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
-    path: 'welcome01',
+    path: '',
     loadChildren: () => import('./welcome01/welcome01.module').then( m => m.Welcome01PageModule)
   },
   {
@@ -31,7 +31,7 @@ const routes: Routes = [
     loadChildren: () => import('./welcome02/welcome02.module').then( m => m.Welcome02PageModule)
   },
   {
-    path: '',
+    path: 'signup01',
     loadChildren: () => import('./signup01/signup01.module').then( m => m.Signup01PageModule)
   },
   {

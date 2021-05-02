@@ -5,6 +5,7 @@
         </ion-card-header>
 
         <ion-card-content>
+
             <ion-img style="width: 70%; height: 70%;" [src]="'./assets/images/welcome.png'"></ion-img>
 
             <div class="mbH3"><span class="highlight">Welcome </span>to MusicBox</div>
@@ -18,7 +19,7 @@
             </p>
             <br>
 
-            <ion-button (click)="onClick()" expand="block" fill="solid" shape="round">
+            <ion-button [routerLink]="['/welcome02']" routerLinkActive="router-link-active" expand="block" fill="solid" shape="round">
                 Get Started
             </ion-button>
         </ion-card-content>

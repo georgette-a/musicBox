@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: 'AIzaSyBN4PemKw8We7nWLvSIwHv5WNAy0fvTTyQ',
+    authDomain: 'musicbox-33da1.firebaseapp.com',
+    projectId: 'musicbox-33da1',
+    storageBucket: 'musicbox-33da1.appspot.com',
+    messagingSenderId: '563422545612',
+    appId: '1:563422545612:web:d412e34a3eec4b915a6469',
+    measurementId: 'G-CBZY1VRRG0'
+  }
 };
 
 /*
@@ -14,3 +23,5 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional

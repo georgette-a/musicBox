@@ -19,12 +19,15 @@
                     </ion-button>
                 </ion-row>
                 <ion-row>
-                    <ion-button (click)="onClick()" expand="block" fill="solid" shape="round">
+                    <ion-button [routerLink]="['/signup01']" routerLinkActive="router-link-active" expand="block" fill="solid" shape="round">
                         <ion-icon size="small" name="mail-sharp" slot="start"></ion-icon>
                         <div>Sign Up with E-mail</div>
                     </ion-button>
-                    <p>
-                        <span class="subtext ion-padding-top">Already have an account? </span><a>Sign In</a></p>
+                    <p class="subtext ion-padding-top">Already have an account? </p>
+                    <ion-button [routerLink]="['/login']" routerLinkActive="router-link-active" expand="block" fill="none" shape="round">
+                        <ion-icon size="small" name="mail-sharp" slot="start"></ion-icon>
+                        <div>Log In</div>
+                    </ion-button>
                 </ion-row>
             </ion-grid>
         </ion-card-content>
