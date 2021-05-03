@@ -5,13 +5,13 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: 'AIzaSyBN4PemKw8We7nWLvSIwHv5WNAy0fvTTyQ',
-    authDomain: 'musicbox-33da1.firebaseapp.com',
-    projectId: 'musicbox-33da1',
-    storageBucket: 'musicbox-33da1.appspot.com',
-    messagingSenderId: '563422545612',
-    appId: '1:563422545612:web:d412e34a3eec4b915a6469',
-    measurementId: 'G-CBZY1VRRG0'
+    apiKey: '',
+    authDomain: '',
+    projectId: '',
+    storageBucket: '',
+    messagingSenderId: '',
+    appId: '',
+    measurementId: ''
   }
 };
 
